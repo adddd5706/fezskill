@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>ウォリアー - FEZスキルシミュレータ</title>
+	<title>戰士ウォリアー - FEZ技能模擬器</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="fezskill.css">
@@ -47,18 +47,18 @@
 	<header>
 		<nav id="topmenu">
 			<ul>
-				<li><a href="./">トップページ</a></li>
-				<li class="active"><a href="./warrior.html">ウォリアー</a></li>
-				<li><a href="./scout.html">スカウト</a></li>
-				<li><a href="./sorcerer.html">ソーサラー</a></li>
-				<li><a href="./fencer.html">フェンサー</a></li>
-				<li><a href="./cestus.html">セスタス</a></li>
+				<li><a href="./">首頁</a></li>
+				<li class="active"><a href="./warrior.html">戰士ウォリアー</a></li>
+				<li><a href="./scout.html">游俠スカウト</a></li>
+				<li><a href="./sorcerer.html">法師ソーサラー</a></li>
+				<li><a href="./fencer.html">劍士フェンサー</a></li>
+				<li><a href="./cestus.html">拳師セスタス</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section class="content_border">
-			<h1 class="title1">ウォリアー <span>- FEZスキルシミュレータ</span></h1>
+			<h1 class="title1">戰士ウォリアー <span>- FEZ技能模擬器</span></h1>
 			<div class="main_flex">
 				<ul id="skillslotbar">
 					<li class="skillslot"></li>
@@ -73,19 +73,19 @@
 				<form class="skillplanner">
 					<div class="scroll_top">
 						<input type="text" id="levelpoint" />
-						<input type="button" value="リセット" id="reset" />
-						<input type="button" value="保存アドレスと取得スキルリスト" class="skilllist" id="openlist" />
+						<input type="button" value="重置" id="reset" />
+						<input type="button" value="保存地址和技能清單" class="skilllist" id="openlist" />
 						<div class="skilllist">
 							<input type="text" size="40" id="storeaddress" />
 							<textarea cols="30"></textarea>
-							<input type="button" value="閉じる" id="closelist" />
+							<input type="button" value="關閉" id="closelist" />
 						</div>
 						<div id="tspointmarkbox">SP: <span class="mark"></span></div>
 					</div>
 					<table>
 						<tbody>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">基本スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">基本技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -99,13 +99,13 @@
 								<td class="empty"></td>
 								<td id="endurepain">
 									<img class="skillicon" src="skillicon/warrior/endurepain.png" alt="エンダーペインアイコン" /><span
-									class="skillname">エンダーペイン</span> Lv. 1
+									class="skillname">傷害忍耐</span> Lv. 1
 								</td>
 								<td class="empty"></td>
 								<td class="empty"></td>
 							</tr>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">共通スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">共通技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -114,7 +114,7 @@
 							<tr>
 								<td id="sonicboom">
 									<img class="skillicon" src="skillicon/warrior/sonicboom.png" alt="ソニックブームアイコン" /><span
-									class="skillname">ソニックブーム</span>
+									class="skillname">音爆</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -127,7 +127,7 @@
 								<td class="connector table_line1"></td>
 								<td id="forceimpact">
 									<img class="skillicon" src="skillicon/warrior/forceimpact.png" alt="フォースインパクトアイコン" /><span
-									class="skillname">フォースインパクト</span>
+									class="skillname">力量衝擊</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -140,7 +140,7 @@
 								<td class="connector table_line1"></td>
 								<td id="crumblestorm">
 									<img class="skillicon" src="skillicon/warrior/crumblestorm.png" alt="クランブルストームアイコン" /><span
-									class="skillname">クランブルストーム</span>
+									class="skillname">粉碎風暴</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -152,7 +152,7 @@
 								</td>
 							</tr>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">片手武器スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">單手武器技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -161,7 +161,7 @@
 							<tr>
 								<td id="blazeslash">
 									<img class="skillicon" src="skillicon/warrior/blazeslash.png" alt="ブレイズスラッシュアイコン" /><span
-									class="skillname">ブレイズスラッシュ</span>
+									class="skillname">火刀</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -174,7 +174,7 @@
 								<td class="connector table_line3"></td>
 								<td id="slumattack">
 									<img class="skillicon" src="skillicon/warrior/slumattack.png" alt="スラムアタックアイコン" /><span
-									class="skillname">スラムアタック</span>
+									class="skillname">猛擊</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -187,7 +187,7 @@
 								<td class="connector table_line1"></td>
 								<td id="earthstamp">
 									<img class="skillicon" src="skillicon/warrior/earthstamp.png" alt="アーススタンプアイコン" /><span
-									class="skillname">アーススタンプ</span>
+									class="skillname">大地之頓</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -208,7 +208,7 @@
 								<td class="connector table_line4"></td>
 								<td id="guardreinforce">
 									<img class="skillicon" src="skillicon/warrior/guardreinforce.png" alt="ガードレインフォースアイコン" /><span
-									class="skillname">ガードレインフォース</span>
+									class="skillname">防禦强化</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -221,7 +221,7 @@
 								<td class="connector table_line1"></td>
 								<td id="shieldbash">
 									<img class="skillicon" src="skillicon/warrior/shieldbash.png" alt="シールドバッシュアイコン" /><span
-									class="skillname">シールドバッシュ</span>
+									class="skillname">盾擊</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -244,7 +244,7 @@
 								<td class="connector table_line1"></td>
 								<td id="solidwall">
 									<img class="skillicon" src="skillicon/warrior/solidwall.png" alt="ソリッドウォールアイコン" /><span
-									class="skillname">ソリッドウォール</span>
+									class="skillname">盾墻</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -256,7 +256,7 @@
 								</td>
 							</tr>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">両手/大剣武器スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">雙手/大劍武器技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -265,7 +265,7 @@
 							<tr>
 								<td id="smash">
 									<img class="skillicon" src="skillicon/warrior/smash.png" alt="スマッシュアイコン" /><span
-									class="skillname">スマッシュ</span>
+									class="skillname">碎擊</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -278,7 +278,7 @@
 								<td class="connector table_line3"></td>
 								<td id="strikesmash">
 									<img class="skillicon" src="skillicon/warrior/strikesmash.png" alt="ストライクスマッシュアイコン" /><span
-									class="skillname">ストライクスマッシュ</span>
+									class="skillname">衝擊斬</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -291,7 +291,7 @@
 								<td class="connector table_line1"></td>
 								<td id="heavysmash">
 									<img class="skillicon" src="skillicon/warrior/heavysmash.png" alt="ヘビースマッシュアイコン" /><span
-									class="skillname">ヘビースマッシュ</span>
+									class="skillname">重壓斬</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -310,7 +310,7 @@
 							<tr>
 								<td class="empty"></td>
 								<td class="empty table_line2"></td>
-								<th class="treecaption"><p class="top_icon2">両手武器スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">雙手武器技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 							</tr>
@@ -319,7 +319,7 @@
 								<td class="connector table_line4"></td>
 								<td id="behemostail">
 									<img class="skillicon" src="skillicon/warrior/behemostail.png" alt="ベヒモステイルアイコン" /><span
-									class="skillname">ベヒモステイル</span>
+									class="skillname">巨獸</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -332,7 +332,7 @@
 								<td class="connector table_line1"></td>
 								<td id="dragontail">
 									<img class="skillicon" src="skillicon/warrior/dragontail.png" alt="ドラゴンテイルアイコン" /><span
-									class="skillname">ドラゴンテイル</span>
+									class="skillname">巨龍</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -355,7 +355,7 @@
 								<td class="connector table_line1"></td>
 								<td id="crackbung">
 									<img class="skillicon" src="skillicon/warrior/crackbung.png" alt="クラックバングアイコン" /><span
-									class="skillname">クラックバング</span>
+									class="skillname">裂地爆炸</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -369,7 +369,7 @@
 							<tr>
 								<td class="empty"></td>
 								<td class="empty table_line2"></td>
-								<th class="treecaption"><p class="top_icon2">大剣武器スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">大劍武器技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 							</tr>
@@ -378,7 +378,7 @@
 								<td class="connector table_line4"></td>
 								<td id="extendblade">
 									<img class="skillicon" src="skillicon/warrior/extendblade.png" alt="エクステンブレイドアイコン" /><span
-									class="skillname">エクステンブレイド</span>
+									class="skillname">斷頭劍</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -391,7 +391,7 @@
 								<td class="connector table_line1"></td>
 								<td id="swordrampage">
 									<img class="skillicon" src="skillicon/warrior/swordrampage.png" alt="ソードランページアイコン" /><span
-									class="skillname">ソードランページ</span>
+									class="skillname">暴跳劍</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -414,7 +414,7 @@
 								<td class="connector table_line1"></td>
 								<td id="assaultedge">
 									<img class="skillicon" src="skillicon/warrior/assaultedge.png" alt="アサルトエッジアイコン" /><span
-									class="skillname">アサルトエッジ</span>
+									class="skillname">突進斬</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -428,7 +428,7 @@
 							<tr>
 								<td class="empty"></td>
 								<td class="empty table_line2"></td>
-								<th class="treecaption"><p class="top_icon2">両手/大剣武器スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">雙手/大劍武器技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 							</tr>
@@ -436,7 +436,7 @@
 							<td class="connector table_line5"></td>
 							<td id="attackreinforce">
 								<img class="skillicon" src="skillicon/warrior/attackreinforce.png" alt="アタックレインフォースアイコン" /><span
-								class="skillname">アタックレインフォース</span>
+								class="skillname">攻擊强化</span>
 								<div class="levelbox"><label>Lv. <select>
 									<option value="0">0</option>
 									<option value="1">1</option>
@@ -457,7 +457,7 @@
 		<div id="showTable"></div>
 		<div class="skilltip">
 			<div id="tipnormal">
-				Pwを消費しない近接攻撃
+				不消耗Pw的近距離攻擊
 				<table>
 					<tr>
 						<th>攻撃力</th>
@@ -466,7 +466,7 @@
 				</table>
 			</div>
 			<div id="tipendurepain">
-				仰け反らなくなる．吹き飛ばしは有効
+				ソニックブームエンダーペイン<br>後仰無效．吹飛有效
 				<table>
 					<tr>
 						<th>消費Pw</th>
@@ -474,16 +474,16 @@
 					</tr>
 					<tr>
 						<th>特殊効果</th>
-						<td>仰け反り無効</td>
+						<td>受到傷害不後仰</td>
 					</tr>
 					<tr>
-						<th>効果時間（秒）</th>
+						<th>效果時間（秒）</th>
 						<td>120</td>
 					</tr>
 				</table>
 			</div>
 			<div id="tipsonicboom">
-				真空波を放つ
+				ソニックブーム<br>放出真空波
 				<table>
 					<thead>
 						<tr>
@@ -514,7 +514,7 @@
 				</table>
 			</div>
 			<div id="tipforceimpact">
-				溜めた力を放出する
+				フォースインパクト<br>放出積蓄的力量
 				<table>
 					<thead>
 						<tr>
@@ -542,14 +542,14 @@
 							<td>110</td>
 						</tr>
 						<tr>
-							<th>特殊効果</th>
+							<th>特殊效果</th>
 							<td colspan="3">貫通</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipcrumblestorm">
-				剣圧を打ち出し，吹き飛ばす
+				クランブルストーム<br>釋放劍氣，吹飛敵人
 				<table>
 					<thead>
 						<tr>
@@ -578,13 +578,13 @@
 						</tr>
 						<tr>
 							<th>特殊効果</th>
-							<td colspan="3">吹き飛ばし（対人専用）</td>
+							<td colspan="3">吹飛（對人專用）</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipblazeslash">
-				素早く斬りつけ，炎ダメージを与える
+				ブレイズスラッシュ<br>快速攻擊，給予火焰傷害
 				<table>
 					<thead>
 						<tr>
@@ -621,7 +621,7 @@
 				</table>
 			</div>
 			<div id="tipslumattack">
-				相手に武器を叩きつけ，吹き飛ばす
+				スラムアタック<br>把武器打到對方身上，把對方吹飛
 				<table>
 					<thead>
 						<tr>
@@ -649,14 +649,14 @@
 							<td>130</td>
 						</tr>
 						<tr>
-							<th>特殊効果</th>
-							<td colspan="3">吹き飛ばし（対人専用）</td>
+							<th>特殊效果</th>
+							<td colspan="3">吹飛（對人専用）</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipearthstamp">
-				ジャンプして地面に武器を叩きつけ，<br />移動速度を低下させる衝撃波を生む
+				アーススタンプ<br>跳躍將武器砸向地面，<br>產生降低移動速度的衝擊波
 				<table>
 					<thead>
 						<tr>
@@ -688,18 +688,18 @@
 							<td colspan="3">移動速度低下</td>
 						</tr>
 						<tr>
-							<th>速度変化割合</th>
+							<th>速度変化比例</th>
 							<td colspan="3">67%</td>
 						</tr>
 						<tr>
-							<th>効果時間（秒）</th>
+							<th>效果時間（秒）</th>
 							<td colspan="3">6</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipguardreinforce">
-				自身に気合を入れ，攻撃力を犠牲にして防御力を上昇させる
+				ガードレインフォース<br>鼓舞自己，犧牲攻擊力，提高防禦力
 				<table>
 					<thead>
 						<tr>
@@ -721,7 +721,7 @@
 							<td colspan="3">40</td>
 						</tr>
 						<tr>
-							<th>耐性上昇</th>
+							<th>耐性上升</th>
 							<td>+30</td>
 							<td>+40</td>
 							<td>+50</td>
@@ -731,14 +731,14 @@
 							<td colspan="3">-15</td>
 						</tr>
 						<tr>
-							<th>効果時間（秒）</th>
+							<th>效果時間（秒）</th>
 							<td colspan="3">120</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipshieldbash">
-				相手に盾を叩きつけ，一瞬だけ気絶状態にする
+				シールドバッシュ<br>將盾打向對方，使對方瞬間昏厥
 				<table>
 					<thead>
 						<tr>
@@ -765,23 +765,23 @@
 						</tr>
 						<tr>
 							<th>特殊効果</th>
-							<td colspan="3">スタン</td>
+							<td colspan="3">眩暈</td>
 						</tr>
 						<tr>
-							<th>効果時間（秒）</th>
+							<th>效果時間（秒）</th>
 							<td>2.3</td>
 							<td>2.8</td>
 							<td>3.3</td>
 						</tr>
 						<tr>
-							<th>スタン耐性（秒）</th>
+							<th>眩暈耐性（秒）</th>
 							<td colspan="3">20</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipsmash">
-				相手に重い一撃を加えるが，隙が生じる
+				スマッシュ<br>給對方一擊，產生硬直
 				<table>
 					<thead>
 						<tr>
@@ -812,7 +812,7 @@
 				</table>
 			</div>
 			<div id="tipstrikesmash">
-				相手の懐に飛び込み，斬りつける
+				ストライクスマッシュ<br>朝對方飛過去進行斬擊
 				<table>
 					<thead>
 						<tr>
@@ -843,7 +843,7 @@
 				</table>
 			</div>
 			<div id="tipheavysmash">
-				相手に重い一撃を加えるが，大きい隙が生じる
+				ヘビースマッシュ<br>給對方以沉重的一擊，產生很大的硬直
 				<table>
 					<thead>
 						<tr>
@@ -874,7 +874,7 @@
 				</table>
 			</div>
 			<div id="tipbehemostail">
-				ジャンプして地面に武器を叩きつけ，衝撃波で周りを切り裂く
+				ベヒモステイル<br>跳起將武器打向地上，用冲击波把四周劈开
 				<table>
 					<thead>
 						<tr>
@@ -905,7 +905,7 @@
 				</table>
 			</div>
 			<div id="tipdragontail">
-				ジャンプして地面に武器を叩きつけ，衝撃波を3回に分けて繰り出す
+				ドラゴンテイル<br>跳起將武器打向地上，把冲击波分成三次放出
 				<table>
 					<thead>
 						<tr>
@@ -936,8 +936,7 @@
 				</table>
 			</div>
 			<div id="tipattackreinforce">
-				精神を武器に注ぎ攻撃力を上昇させる。<br>
-				エンダーペイン効果も併せて付与される。
+				アタックレインフォース<br>以精神为武器，攻击力上升。<br>傷害忍耐效果也一起被赋予。
 				<table>
 					<thead>
 						<tr>
@@ -959,20 +958,20 @@
 							<td colspan="3">40</td>
 						</tr>
 						<tr>
-							<th>攻性上昇</th>
+							<th>攻性上升</th>
 							<td>+5</td>
 							<td>+7</td>
 							<td>+10</td>
 						</tr>
 						<tr>
-							<th>効果時間（秒）</th>
+							<th>效果時間（秒）</th>
 							<td colspan="3">120</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div id="tipextendblade">
-				前方に真空の刃を発生させる
+				エクステンブレイド<br>在前方產生真空刃
 				<table>
 					<thead>
 						<tr>
@@ -1003,7 +1002,7 @@
 				</table>
 			</div>
 			<div id="tipswordrampage">
-				剣を2度振り，周りを攻撃する
+				ソードランページ<br>揮劍二次，向四周攻擊
 				<table>
 					<thead>
 						<tr>
@@ -1034,7 +1033,7 @@
 				</table>
 			</div>
 			<div id="tipassaultedge">
-				前方に踏み込みを行い、渾身の一振りで真空の刃を3つ発生させる
+				アサルトエッジ<br>向前踏進，用全身的力量揮擊使之產生3個真空刃
 				<table>
 					<thead>
 						<tr>
@@ -1065,7 +1064,7 @@
 				</table>
 			</div>
 			<div id="tipcrackbung">
-				地面に勢いよく武器を叩きつけ、前方へ衝撃波を炸裂させる
+				クラックバング<br>用力擊打地面，向前方產生爆炸衝擊波
 				<table>
 					<thead>
 						<tr>
@@ -1096,7 +1095,7 @@
 				</table>
 			</div>
 			<div id="tipsolidwall">
-				気力を体にみなぎらせ、一時的に吹き飛ばなくなる
+				ソリッドウォール<br>讓身體充滿力量，暫時無法吹散
 				<table>
 					<thead>
 						<tr>
@@ -1118,7 +1117,7 @@
 							<td colspan="3">30</td>
 						</tr>
 						<tr>
-							<th>効果時間（秒）</th>
+							<th>效果時間（秒）</th>
 							<td>60</td>
 							<td>120</td>
 							<td>120</td>
@@ -1127,14 +1126,14 @@
 							<th>耐性</th>
 							<td>-20</td>
 							<td>-10</td>
-							<td>なし</td>
+							<td>無</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</main>
-	<footer><address class="copyright">© 2021 SQUARE ENIX CO., LTD. All Rights Reserved.</address></footer>
+	<footer><address class="copyright">© 2022 SQUARE ENIX CO., LTD. All Rights Reserved.</address></footer>
 </body>
 
 </html>
