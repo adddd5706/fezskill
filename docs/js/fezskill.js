@@ -201,7 +201,7 @@ Skill.prototype = {
 };
 $(document).ready(function() {
 	// ツールチップ設定
-	$("span.skillname").powerTip({placement: "n", smartPlacement: true});
+	$("span.skillname").powerTip({placement: "n", smartPlacement: false});
 
 	// スキルアイコンドラッグ
 	$(".skillicon").draggable({helper: "clone"});
