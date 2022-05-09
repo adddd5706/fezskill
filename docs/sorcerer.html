@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>ソーサラー - FEZスキルシミュレータ</title>
+	<title>法師ソーサラー - FEZ技能模擬器</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="fezskill.css">
@@ -47,18 +47,18 @@
 	<header>
 		<nav id="topmenu">
 			<ul>
-				<li><a href="./">トップページ</a></li>
-				<li><a href="./warrior.html">ウォリアー</a></li>
-				<li><a href="./scout.html">スカウト</a></li>
-				<li class="active"><a href="./sorcerer.html">ソーサラー</a></li>
-				<li><a href="./fencer.html">フェンサー</a></li>
-				<li><a href="./cestus.html">セスタス</a></li>
+				<li><a href="./">首頁</a></li>
+				<li><a href="./warrior.html">戰士ウォリアー</a></li>
+				<li><a href="./scout.html">游俠スカウト</a></li>
+				<li class="active"><a href="./sorcerer.html">法師ソーサラー</a></li>
+				<li><a href="./fencer.html">劍士フェンサー</a></li>
+				<li><a href="./cestus.html">拳師セスタス</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section class="content_border">
-			<h1 class="title1">ソーサラー <span>- FEZスキルシミュレータ</span></h1>
+			<h1 class="title1">法師ソーサラー <span>- FEZ技能模擬器</span></h1>
 			<div class="main_flex">
 				<ul id="skillslotbar">
 					<li class="skillslot"></li>
@@ -73,19 +73,19 @@
 				<form class="skillplanner">
 					<div class="scroll_top">
 						<input type="text" id="levelpoint" />
-						<input type="button" value="リセット" id="reset" />
-						<input type="button" value="保存アドレスと取得スキルリスト" class="skilllist" id="openlist" />
+						<input type="button" value="重置" id="reset" />
+						<input type="button" value="保存地址和技能列表" class="skilllist" id="openlist" />
 						<div class="skilllist">
 							<input type="text" size="40" id="storeaddress" />
 							<textarea cols="30"></textarea>
-							<input type="button" value="閉じる" id="closelist" />
+							<input type="button" value="關閉" id="closelist" />
 						</div>
 						<div id="tspointmarkbox">SP: <span class="mark"></span></div>
 					</div>
 					<table>
 						<tbody>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">基本スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">基本技能</p></th>
 								<td class="empty"></td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -112,14 +112,14 @@
 								<td class="empty"></td>
 							</tr>
 							<tr>
-								<th class="treecaption"><p class="top_icon2">詠唱不要スキル</p></th>
+								<th class="treecaption"><p class="top_icon2">不需詠唱技能</p></th>
 								<td class="empty"></td>
-								<th class="treecaption" colspan="3"><p class="top_icon2">詠唱必要スキル</p></th>
+								<th class="treecaption" colspan="3"><p class="top_icon2">詠唱必要技能</p></th>
 							</tr>
 							<tr class="lv3_move">
 								<td id="lightning">
 									<img class="skillicon" src="skillicon/sorcerer/lightning.png" alt="ライトニングアイコン" /><span
-									class="skillname">ライトニング</span>
+									class="skillname">閃雷</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -132,7 +132,7 @@
 								<td class="connector table_line3"></td>
 								<td id="lightningspear">
 									<img class="skillicon" src="skillicon/sorcerer/lightningspear.png" alt="ライトニングスピアアイコン" /><span
-									class="skillname">ライトニングスピア</span>
+									class="skillname">閃雷矛</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -147,7 +147,7 @@
 								</td>
 								<td id="judgementray">
 									<img class="skillicon" src="skillicon/sorcerer/judgementray.png" alt="ジャッジメントレイアイコン" /><span
-									class="skillname">ジャッジメントレイ</span>
+									class="skillname">審判射綫</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -170,7 +170,7 @@
 								<td class="connector table_line4"></td>
 								<td id="thunderbolt">
 									<img class="skillicon" src="skillicon/sorcerer/thunderbolt.png" alt="サンダーボルトアイコン" /><span
-									class="skillname">サンダーボルト</span>
+									class="skillname">雷暴</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -185,7 +185,7 @@
 								</td>
 								<td id="meteorimpact">
 									<img class="skillicon" src="skillicon/sorcerer/meteorimpact.png" alt="メテオインパクトアイコン" /><span
-									class="skillname">メテオインパクト</span>
+									class="skillname">隕石衝擊</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -208,7 +208,7 @@
 								<td class="connector table_line5"></td>
 								<td id="electricdrive">
 									<img class="skillicon" src="skillicon/sorcerer/electricdrive.png" alt="エレキドライブアイコン" /><span
-									class="skillname">エレキドライブ</span>
+									class="skillname">雷光彈</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -230,7 +230,7 @@
 							<tr class="mt_10 lv3_move">
 								<td id="fire">
 									<img class="skillicon" src="skillicon/sorcerer/fire.png" alt="ファイアアイコン" /><span
-									class="skillname">ファイア</span>
+									class="skillname">火球</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -243,7 +243,7 @@
 								<td class="connector table_line3"></td>
 								<td id="sparkflare">
 									<img class="skillicon" src="skillicon/sorcerer/sparkflare.png" alt="スパークフレアアイコン" /><span
-									class="skillname">スパークフレア</span>
+									class="skillname">火花迸發</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -258,7 +258,7 @@
 								</td>
 								<td id="hellfire">
 									<img class="skillicon" src="skillicon/sorcerer/hellfire.png" alt="ヘルファイアアイコン" /><span
-									class="skillname">ヘルファイア</span>
+									class="skillname">地獄焰火</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -281,7 +281,7 @@
 								<td class="connector table_line4"></td>
 								<td id="firelance">
 									<img class="skillicon" src="skillicon/sorcerer/firelance.png" alt="ファイアランスアイコン" /><span
-									class="skillname">ファイアランス</span>
+									class="skillname">火焰槍</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -296,7 +296,7 @@
 								</td>
 								<td id="laserblast">
 									<img class="skillicon" src="skillicon/sorcerer/laserblast.png" alt="レーザーブラストアイコン" /><span
-									class="skillname">レーザーブラスト</span>
+									class="skillname">激光炮</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -319,7 +319,7 @@
 								<td class="connector table_line5"></td>
 								<td id="framecircle">
 									<img class="skillicon" src="skillicon/sorcerer/framecircle.png" alt="フレイムサークルアイコン" /><span
-									class="skillname">フレイムサークル</span>
+									class="skillname">火焰圈</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -341,7 +341,7 @@
 							<tr class="lv3_move">
 								<td id="icebolt">
 									<img class="skillicon" src="skillicon/sorcerer/icebolt.png" alt="アイスボルトアイコン" /><span
-									class="skillname">アイスボルト</span>
+									class="skillname">冰暴</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -354,7 +354,7 @@
 								<td class="connector table_line3"></td>
 								<td id="icejavelin">
 									<img class="skillicon" src="skillicon/sorcerer/icejavelin.png" alt="アイスジャベリンアイコン" /><span
-									class="skillname">アイスジャベリン</span>
+									class="skillname">寒冰槍</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -369,7 +369,7 @@
 								</td>
 								<td id="blizzardchares">
 									<img class="skillicon" src="skillicon/sorcerer/blizzardchares.png" alt="ブリザードカレスアイコン" /><span
-									class="skillname">ブリザードカレス</span>
+									class="skillname">冰雪擁抱</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -392,7 +392,7 @@
 								<td class="connector table_line4"></td>
 								<td id="freezingwave">
 									<img class="skillicon" src="skillicon/sorcerer/freezingwave.png" alt="フリージングウェイブアイコン" /><span
-									class="skillname">フリージングウェイブ</span>
+									class="skillname">冰凍波</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -407,7 +407,7 @@
 								</td>
 								<td id="gravitycaptcher">
 									<img class="skillicon" src="skillicon/sorcerer/gravitycaptcher.png" alt="グラビティキャプチャアイコン" /><span
-									class="skillname">グラビティキャプチャ</span>
+									class="skillname">重力場</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -430,7 +430,7 @@
 								<td class="connector table_line5"></td>
 								<td id="icetarget">
 									<img class="skillicon" src="skillicon/sorcerer/icetarget.png" alt="アイスターゲットアイコン" /><span
-									class="skillname">アイスターゲット</span>
+									class="skillname">冰結</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
