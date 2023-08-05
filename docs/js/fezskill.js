@@ -1,6 +1,6 @@
 var SKILLPOINT_MARK = "-";
 var SKILLPOINT_MARKED = "X";
-var SKILLPOINT_LIMIT = 45;
+var SKILLPOINT_LIMIT = 40;
 var SKILLSLOT_SIZE = 8;
 // キャラクタークラス列挙
 var CHARACTER_CLASS = {
@@ -375,7 +375,7 @@ TotalSkillPoint.prototype = {
 			for (i = 0; i < point; i++) {
 				mark += SKILLPOINT_MARKED;
 			}
-			for (; i < 45; i++) {
+			for (; i < 40; i++) {
 				mark += SKILLPOINT_MARK;
 			}
 		}
@@ -383,7 +383,7 @@ TotalSkillPoint.prototype = {
 	},
 	/**
 	 * レベルポイントガイドテキスト
-	 * Lv. -- rest 45 Max. 45
+	 * Lv. -- rest 40 Max. 40
 	 * @param {type} point 消費したスキルポイント
 	 * @returns {String}
 	 */
