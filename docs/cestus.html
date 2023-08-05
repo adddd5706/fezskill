@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>拳師セスタス - FEZ技能模擬器</title>
+	<title>拳师 - FEZ技能模拟器3.8</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="fezskill.css">
@@ -17,25 +17,25 @@
 		var skills, tsv, characterClass, skillslots;
 		var tspoint = new TotalSkillPoint();
 		$(document).ready(function () {
-			// キャラクタークラス設定
+			// 职业设定
 			characterClass = CHARACTER_CLASS.CESTUS;
 			tsv = new Tsv(characterClass);
-			// スキル設定
+			// 技能設定
 			skills = new Array();
 			for (var i = 0; i < tsv.data.rows.length; i++) {
 				skills[tsv.data.rows[i].id] = new Skill(tsv.data.rows[i]);
 			}
 			// 初期化
 			$("input#reset").click();
-			// GETパラメータ取得
+			// 获取技能点
 			params = getUrlVars();
 			if (params !== null) {
 				if (params["s"] !== void (0)) {
-					// スキルスロットリセット
+					// 技能スロットリセット
 					resetSlot(params["s"]);
 				}
 				if (params["l"] !== void (0)) {
-					// スキルレベルリセット
+					// 技能レベルリセット
 					resetLevel(params["l"]);
 				}
 			}
@@ -47,18 +47,18 @@
 	<header>
 		<nav id="topmenu">
 			<ul>
-				<li><a href="./">首頁</a></li>
-				<li><a href="./warrior.html">戰士ウォリアー</a></li>
-				<li><a href="./scout.html">游俠スカウト</a></li>
-				<li><a href="./sorcerer.html">法師ソーサラー</a></li>
-				<li><a href="./fencer.html">劍士フェンサー</a></li>
-				<li class="active"><a href="./cestus.html">拳師セスタス</a></li>
+				<li><a href="./">首页</a></li>
+				<li><a href="./warrior.html">战士</a></li>
+				<li><a href="./scout.html">游侠</a></li>
+				<li><a href="./sorcerer.html">法师</a></li>
+				<li><a href="./fencer.html">剑士</a></li>
+				<li class="active"><a href="./cestus.html">拳师</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section class="content_border">
-			<h1 class="title1">拳師セスタス <span>- FEZ技能模擬器</span></h1>
+			<h1 class="title1">拳师 <span>- FEZ技能模拟器国服3.8版本</span></h1>
 			<div class="main_flex">
 				<ul id="skillslotbar">
 					<li class="skillslot"></li>
@@ -78,7 +78,7 @@
 						<div class="skilllist">
 							<input type="text" size="40" id="storeaddress" />
 							<textarea cols="30"></textarea>
-							<input type="button" value="關閉" id="closelist" />
+							<input type="button" value="关闭" id="closelist" />
 						</div>
 						<div id="tspointmarkbox">SP: <span class="mark"></span></div>
 					</div>
@@ -86,13 +86,13 @@
 						<tbody>
 							<tr class="skill_basic">
 								<td id="normal">
-									<img class="skillicon" src="skillicon/cestus/normal.png" alt="基本攻撃アイコン" /><span
-									class="skillname">基本攻撃</span> Lv. 1
+									<img class="skillicon" src="skillicon/cestus/normal.png" alt="基本攻击图标" /><span
+									class="skillname">基本攻击</span> Lv. 1
 								</td>
 								<td class="empty"></td>
 								<td id="endureraid">
-									<img class="skillicon" src="skillicon/cestus/endureraid.png" alt="エンダーレイドアイコン" /><span
-									class="skillname">傷害忍耐</span> Lv. 1
+									<img class="skillicon" src="skillicon/cestus/endureraid.png" alt="突击克星图标" /><span
+									class="skillname">突击克星</span> Lv. 1
 								</td>
 								<td class="empty"></td>
 								<td class="empty"></td>
@@ -102,20 +102,19 @@
 							</tr>
 							<tr>
 								<td id="shutout">
-									<img class="skillicon" src="skillicon/cestus/shutout.png" alt="シャットアウトアイコン" /><span
-									class="skillname">遮斷</span>
+									<img class="skillicon" src="skillicon/cestus/shutout.png" alt="遮断图标" /><span
+									class="skillname">遮断</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
+										<option value="1">1</option>										
 									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
 									class="upLevel" value="▲" /></div>
 									<div class="markbox">SP: <span class="mark"></span></div>
 								</td>
 								<td class="connector table_line3"></td>
 								<td id="hardreinforce">
-									<img class="skillicon" src="skillicon/cestus/hardreinforce.png" alt="ハードレインフォースアイコン" /><span
-									class="skillname">防禦强化</span>
+									<img class="skillicon" src="skillicon/cestus/hardreinforce.png" alt="加固保护图标" /><span
+									class="skillname">加固保护</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -123,10 +122,161 @@
 									class="upLevel" value="▲" /></div>
 									<div class="markbox">SP: <span class="mark"></span></div>
 								</td>
+								<td class="empty"></td>
+
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="empty table_line2"></td>
+								<td class="empty"></td>
+								<td class="empty"></td>
+								<td class="empty"></td>
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="connector table_line4"></td>
+								<td id="sacrifice">
+									<img class="skillicon" src="skillicon/cestus/sacrifice.png" alt="牺牲图标" /><span
+									class="skillname">牺牲</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>				
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>								
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="empty table_line2"></td>
+								<td class="empty"></td>								
+								<td class="empty"></td>
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="connector table_line5"></td>
+								<td id="towerdomination">
+									<img class="skillicon" src="skillicon/cestus/towerdomination.png" alt="箭塔控制图标" /><span
+									class="skillname">箭塔控制</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>								
+								
+							</tr>
+							<tr>
+								<td class="empty" colspan="5"></td>
+							</tr>
+							<tr>
+								<td id="intensify">
+									<img class="skillicon" src="skillicon/cestus/intensify.png" alt="激化图标" /><span
+									class="skillname">激化</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+								<td class="connector table_line3"></td>
+								<td id="knockimpact">
+									<img class="skillicon" src="skillicon/cestus/knockimpact.png" alt="打击震撼图标" /><span
+									class="skillname">打击震撼</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+								<td class="connector table_line1"></td>
+								<td id="earthbind">
+									<img class="skillicon" src="skillicon/cestus/earthbind.png" alt="大地缠绕图标" /><span
+									class="skillname">大地缠绕</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="empty table_line2"></td>
+								<td class="empty" colspan="3"></td>
+							</tr>
+							<tr>
+								<td class="empty"></td>
+								<td class="connector table_line5"></td>
+								<td id="solidstrike">
+									<img class="skillicon" src="skillicon/cestus/solidstrike.png" alt="凝集斩图标" /><span
+									class="skillname">凝集斩</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+								<td class="connector table_line1"></td>
+								<td id="shockwave">
+									<img class="skillicon" src="skillicon/cestus/shockwave.png" alt="冲击波图标" /><span
+									class="skillname">冲击波</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="empty" colspan="5"></td>
+							</tr>
+							<tr>
+								<td id="drainclaw">
+									<img class="skillicon" src="skillicon/cestus/drainclaw.png" alt="吸血爪图标" /><span
+									class="skillname">吸血爪</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
+								<td class="connector table_line3"></td>
+								<td id="hornetsting">
+									<img class="skillicon" src="skillicon/cestus/hornetsting.png" alt="蜂刺图标" /><span
+									class="skillname">蜂刺</span>
+									<div class="levelbox"><label>Lv. <select>
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
+									class="upLevel" value="▲" /></div>
+									<div class="markbox">SP: <span class="mark"></span></div>
+								</td>
 								<td class="connector table_line3"></td>
 								<td id="geysersmash">
-									<img class="skillicon" src="skillicon/cestus/geysersmash.png" alt="ゲイザースマッシュアイコン" /><span
-									class="skillname">激噴粉碎</span>
+									<img class="skillicon" src="skillicon/cestus/geysersmash.png" alt="激喷粉碎图标" /><span
+									class="skillname">激喷粉碎</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -148,8 +298,8 @@
 								<td class="empty"></td>
 								<td class="connector table_line4"></td>
 								<td id="harmactivate">
-									<img class="skillicon" src="skillicon/cestus/harmactivate.png" alt="ハームアクティベイトアイコン" /><span
-									class="skillname">危險激活</span>
+									<img class="skillicon" src="skillicon/cestus/harmactivate.png" alt="危险激活图标" /><span
+									class="skillname">危险激活</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -159,74 +309,9 @@
 									class="upLevel" value="▲" /></div>
 									<div class="markbox">SP: <span class="mark"></span></div>
 								</td>
-								<td class="connector table_line8"></td>
-								<td class="empty"></td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="empty table_line2"></td>
-								<td class="empty"></td>
-								<td class="empty table_line2"></td>
-								<td class="empty"></td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="connector table_line5"></td>
-								<td id="towerdomination">
-									<img class="skillicon" src="skillicon/cestus/towerdomination.png" alt="タワードミネーションアイコン" /><span
-									class="skillname">强化箭塔</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
+								
 								<td class="connector table_line6"></td>
 								<td class="empty"></td>
-							</tr>
-							<tr>
-								<td class="empty" colspan="5"></td>
-							</tr>
-							<tr>
-								<td id="intensify">
-									<img class="skillicon" src="skillicon/cestus/intensify.png" alt="インテンスファイアイコン" /><span
-									class="skillname">激化</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-								<td class="connector table_line3"></td>
-								<td id="knockimpact">
-									<img class="skillicon" src="skillicon/cestus/knockimpact.png" alt="ノックインパクトアイコン" /><span
-									class="skillname">衝撞</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-								<td class="connector table_line1"></td>
-								<td id="earthbind">
-									<img class="skillicon" src="skillicon/cestus/earthbind.png" alt="アースバインドアイコン" /><span
-									class="skillname">大地纏繞</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
 							</tr>
 							<tr>
 								<td class="empty"></td>
@@ -236,88 +321,9 @@
 							<tr>
 								<td class="empty"></td>
 								<td class="connector table_line5"></td>
-								<td id="solidstrike">
-									<img class="skillicon" src="skillicon/cestus/solidstrike.png" alt="ソリッドストライクアイコン" /><span
-									class="skillname">硬化打擊</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-								<td class="connector table_line1"></td>
-								<td id="shockwave">
-									<img class="skillicon" src="skillicon/cestus/shockwave.png" alt="ショックウェイブアイコン" /><span
-									class="skillname">衝擊波</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-							</tr>
-							<tr>
-								<td class="empty" colspan="5"></td>
-							</tr>
-							<tr>
-								<td id="drainclaw">
-									<img class="skillicon" src="skillicon/cestus/drainclaw.png" alt="ドレインクローアイコン" /><span
-									class="skillname">吸血爪</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-								<td class="connector table_line3"></td>
-								<td id="hornetsting">
-									<img class="skillicon" src="skillicon/cestus/hornetsting.png" alt="ホーネットスティングアイコン" /><span
-									class="skillname">蜂刺</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-								<td class="connector table_line3"></td>
-								<td id="cyclonedisaster">
-									<img class="skillicon" src="skillicon/cestus/cyclonedisaster.png" alt="サイクロンディザスターアイコン" /><span
-									class="skillname">災難旋風</span>
-									<div class="levelbox"><label>Lv. <select>
-										<option value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select></label><input type="button" class="downLevel" value="▼" /><input type="button"
-									class="upLevel" value="▲" /></div>
-									<div class="markbox">SP: <span class="mark"></span></div>
-								</td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="empty table_line2"></td>
-								<td class="empty"></td>
-								<td class="empty table_line2"></td>
-								<td class="empty"></td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="connector table_line4"></td>
 								<td id="backhandblow">
-									<img class="skillicon" src="skillicon/cestus/backhandblow.png" alt="バックハンドブローアイコン" /><span
-									class="skillname">反手猛擊</span>
+									<img class="skillicon" src="skillicon/cestus/backhandblow.png" alt="反手攻击图标" /><span
+									class="skillname">反手攻击</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -327,20 +333,11 @@
 									class="upLevel" value="▲" /></div>
 									<div class="markbox">SP: <span class="mark"></span></div>
 								</td>
-								<td class="connector table_line6"></td>
-								<td class="empty"></td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="empty table_line2"></td>
-								<td class="empty" colspan="3"></td>
-							</tr>
-							<tr>
-								<td class="empty"></td>
-								<td class="connector table_line5"></td>
-								<td id="energysphire">
-									<img class="skillicon" src="skillicon/cestus/energysphire.png" alt="エナジースフィアアイコン" /><span
-									class="skillname">能量球</span>
+								
+								<td class="connector table_line1"></td>
+								<td id="cyclonedisaster">
+									<img class="skillicon" src="skillicon/cestus/cyclonedisaster.png" alt="旋风灾难图标" /><span
+									class="skillname">旋风灾难</span>
 									<div class="levelbox"><label>Lv. <select>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -350,8 +347,6 @@
 									class="upLevel" value="▲" /></div>
 									<div class="markbox">SP: <span class="mark"></span></div>
 								</td>
-								<td class="empty"></td>
-								<td class="empty"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -371,14 +366,14 @@
 					</table>
 				</div>
 				<div id="tipendureraid">
-					エンダーレイド<br>後仰無效．吹飛有效
+					突击克星<br>後仰無效．吹飛有效
 					<table>
 						<tr>
 							<th>消費Pw</th>
 							<td>10</td>
 						</tr>
 						<tr>
-							<th>特殊効果</th>
+							<th>特殊效果</th>
 							<td>後仰無效</td>
 						</tr>
 						<tr>
@@ -388,7 +383,7 @@
 					</table>
 				</div>
 				<div id="tipshutout">
-					シャットアウト<br>使肉體硬化，耐性飛躍性地提高，
+					遮断<br>使肉體硬化，耐性飛躍性地提高，
 					<table>
 						<tr>
 							<th>消費SP</th>
@@ -400,7 +395,7 @@
 							<td colspan="2">60</td>
 						</tr>
 						<tr>
-							<th>特殊効果</th>
+							<th>特殊效果</th>
 							<td colspan="2">後仰無效．眩暈無效．Pw不能自然回復</td>
 						</tr>
 						<tr>
@@ -415,7 +410,7 @@
 					</table>
 				</div>
 				<div id="tiphardreinforce">
-					ハードレインフォース<br>把注意力集中在肉體上
+					加固保护<br>把注意力集中在肉體上
 					<table>
 						<tr>
 							<th>消費SP</th>
@@ -440,7 +435,7 @@
 					</table>
 				</div>				
 				<div id="tiptowerdomination">
-					タワードミネーション<br>加强我方的箭塔，發動時自身HP和Pw逐漸减少
+					箭塔控制<br>加强我方的箭塔，發動時自身HP和Pw逐漸减少
 					<table>
 						<tr>
 							<th>消費SP</th>
@@ -465,7 +460,7 @@
 					</table>
 				</div>
 				<div id="tipintensify">
-					インテンスファイ<br>集中在拳頭上的氣一口氣向前方發出，<br>吹飛敵人的招數
+					激化<br>集中在拳頭上的氣一口氣向前方發出，<br>吹飛敵人的招數
 					<table>
 						<thead>
 							<tr>
@@ -506,7 +501,7 @@
 					</table>
 				</div>
 				<div id="tipknockimpact">
-					ノックインパクト<br>在前方進行强烈的突進，<br>將觸碰到的敵人彈飛
+					打击震撼<br>在前方進行强烈的突進，<br>將觸碰到的敵人彈飛
 					<table>
 						<thead>
 							<tr>
@@ -541,7 +536,7 @@
 					</table>
 				</div>
 				<div id="tipearthbind">
-					アースバインド<br>小幅度地跳起來，將拳頭打進地面
+					大地缠绕<br>小幅度地跳起來，將拳頭打進地面
 					<table>
 						<thead>
 							<tr>
@@ -586,7 +581,7 @@
 					</table>
 				</div>
 				<div id="tipsolidstrike">
-					ソリッドストライク<br>防守姿態放出强力的迴旋踢，破壞對方的姿勢
+					凝集斩<br>防守姿態放出强力的迴旋踢，破壞對方的姿勢
 					<table>
 						<thead>
 							<tr>
@@ -633,7 +628,7 @@
 					</table>
 				</div>
 				<div id="tipshockwave">
-					ショックウェイブ<br>將積聚的氣打在地面，用衝擊波將周圍敵人移動速度降低<br>根據積蓄的等級效果提升
+					冲击波<br>將積聚的氣打在地面，用衝擊波將周圍敵人移動速度降低<br>根據積蓄的等級效果提升
 					<table>
 						<thead>
 							<tr>
@@ -655,8 +650,8 @@
 								<td colspan="3">35</td>
 							</tr>
 							<tr>
-								<th>チャージレベル</th>
-								<td>なし</td>
+								<th>蓄力等级</th>
+								<td>无</td>
 								<td>1</td>
 								<td>Max.</td>
 							</tr>
@@ -696,7 +691,7 @@
 					</table>
 				</div>
 				<div id="tipdrainclaw">
-					ドレインクロー<br>攻擊的同時奪取生命值，建築物也可以吸收
+					吸血爪<br>攻擊的同時奪取生命值，建築物也可以吸收
 					<table>
 						<thead>
 							<tr>
@@ -731,7 +726,7 @@
 					</table>
 				</div>
 				<div id="tiphornetsting">
-					ホーネットスティング<br>從脚上釋放氣，放出强烈的飛踢
+					蜂刺<br>從脚上釋放氣，放出强烈的飛踢
 					<table>
 						<thead>
 							<tr>
@@ -766,7 +761,7 @@
 					</table>
 				</div>
 				<div id="tipharmactivate">
-					ハームアクティベイト<br>把自己的氣灌輸給對方，使對方狀態發生變化
+					危险激活<br>把自己的氣灌輸給對方，使對方狀態發生變化
 					<table>
 						<thead>
 							<tr>
@@ -794,7 +789,7 @@
 								<td>230</td>
 							</tr>
 							<tr>
-								<th>對人特殊効果</th>
+								<th>對人特殊效果</th>
 								<td colspan="3">消除灼燒或中毒狀態，傷害追加150．重複時200</td>
 							</tr>
 							<tr>
@@ -807,7 +802,7 @@
 					</table>
 				</div>
 				<div id="tipgeysersmash">
-					ゲイザースマッシュ<br>讓拳頭積攢氣，使出渾身的一擊．<br>根據積蓄的等級威力會增加
+					激喷粉碎<br>讓拳頭積攢氣，使出渾身的一擊．<br>根據積蓄的等級威力會增加
 					<table>
 						<thead>
 							<tr>
@@ -854,7 +849,7 @@
 					</table>
 				</div>
 				<div id="tipbackhandblow">
-					バックハンドブロウ<br>一邊向前踏出一邊放裏拳
+					反手攻击<br>一邊向前踏出一邊放裏拳
 					<table>
 						<thead>
 							<tr>
@@ -885,7 +880,7 @@
 					</table>
 				</div>
 				<div id="tipcyclonedisaster">
-					サイクロンディザスター<br>大揮手臂攻擊周圍的敵人4次
+					旋风灾难<br>大揮手臂攻擊周圍的敵人4次
 					<table>
 						<thead>
 							<tr>
@@ -920,7 +915,7 @@
 					</table>
 				</div>
 				<div id="tipenergysphire">
-					エナジースフィア<br>不會造成後仰的遠距離貫通攻撃
+					能量球<br>不會造成後仰的遠距離貫通攻撃
 					<table>
 						<thead>
 							<tr>
