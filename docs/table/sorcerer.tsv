@@ -1,21 +1,18 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
-a	normal	åŸºæœ¬æ”»æ’ƒ	1	1	0				
-b	chant	è© å”±	1	3	0	2	2		
-c	fire	ãƒ•ã‚¡ã‚¤ã‚¢	0	3	2	1	1		firelance,sparkflare,hellfire,meteorimpact,laserblast,framecircle
-d	firelance	ãƒ•ã‚¡ã‚¤ã‚¢ãƒ©ãƒ³ã‚¹	0	3	2	2	2	fire	hellfire,laserblast
-e	sparkflare	ã‚¹ãƒ‘ãƒ¼ã‚¯ãƒ•ãƒ¬ã‚¢	0	3	2	2	2	fire	hellfire,meteorimpact
-f	hellfire	ãƒ˜ãƒ«ãƒ•ã‚¡ã‚¤ã‚¢	0	3	2	2	2	fire,firelance,sparkflare	
-g	icebolt	ã‚¢ã‚¤ã‚¹ãƒœãƒ«ãƒˆ	0	3	2	1	1		icejavelin,freezingwave,blizzardchares,laserblast,gravitycaptcher,icetarget
-h	icejavelin	ã‚¢ã‚¤ã‚¹ã‚¸ãƒ£ãƒ™ãƒªãƒ³	0	3	2	2	2	icebolt	blizzardchares,laserblast
-i	freezingwave	ãƒ•ãƒªãƒ¼ã‚¸ãƒ³ã‚°ã‚¦ã‚§ã‚¤ãƒ–	0	3	2	2	2	icebolt	blizzardchares,gravitycaptcher
-j	blizzardchares	ãƒ–ãƒªã‚¶ãƒ¼ãƒ‰ã‚«ãƒ¬ã‚¹	0	3	2	2	2	icebolt,icejavelin,freezingwave	
-k	lightning	ãƒ©ã‚¤ãƒˆãƒ‹ãƒ³ã‚°	0	3	2	1	1		lightningspear,thunderbolt,judgementray,meteorimpact,gravitycaptcher,electricdrive
-l	lightningspear	ãƒ©ã‚¤ãƒˆãƒ‹ãƒ³ã‚°ã‚¹ãƒ”ã‚¢	0	3	2	2	2	lightning	judgementray,gravitycaptcher
-m	thunderbolt	ã‚µãƒ³ãƒ€ãƒ¼ãƒœãƒ«ãƒˆ	0	3	2	2	2	lightning	judgementray,meteorimpact
-n	judgementray	ã‚¸ãƒ£ãƒƒã‚¸ãƒ¡ãƒ³ãƒˆãƒ¬ã‚¤	0	3	2	2	2	lightning,lightningspear,thunderbolt	
-o	meteorimpact	ãƒ¡ãƒ†ã‚ªã‚¤ãƒ³ãƒ‘ã‚¯ãƒˆ	0	3	2	2	2	fire,sparkflare,thunderbolt,lightning	
-p	laserblast	ãƒ¬ãƒ¼ã‚¶ãƒ¼ãƒ–ãƒ©ã‚¹ãƒˆ	0	3	2	2	2	fire,firelance,icebolt,icejavelin	
-q	gravitycaptcher	ã‚°ãƒ©ãƒ“ãƒ†ã‚£ã‚­ãƒ£ãƒ—ãƒãƒ£	0	3	2	2	2	icebolt,freezingwave,lightning,lightningspear	
-r	electricdrive	ã‚¨ãƒ¬ã‚­ãƒ‰ãƒ©ã‚¤ãƒ–	0	3	1	2	2	lightning	
-s	framecircle	ãƒ•ãƒ¬ã‚¤ãƒ ã‚µãƒ¼ã‚¯ãƒ«	0	3	1	2	2	fire	
-t	icetarget	ã‚¢ã‚¤ã‚¹ã‚¿ãƒ¼ã‚²ãƒƒãƒˆ	0	3	1	2	2	icebolt	
+a	normal	»ù±¾¹¥»÷	1	1	0				
+b	chant	Ó½³ª	1	3	0	2	2		
+c	fire	»ğÇò	0	3	2	1	1		"firelance,sparkflare,hellfire,meteorimpact,divineshield"
+d	firelance	»ğÑæÇ¹	0	3	2	2	2	fire	"hellfire,divineshield"
+e	sparkflare	»ğ»¨±Å·¢	0	3	2	2	2	fire	"hellfire,meteorimpact"
+f	hellfire	µØÓüÑæ»ğ	0	3	3	2	2	"fire,firelance,sparkflare"	
+g	icebolt	±ù±©	0	3	2	1	1		"icejavelin,freezingwave,blizzardchares,divineshield,gravitycaptcher"
+h	icejavelin	º®±ùÇ¹	0	3	2	2	2	icebolt	"blizzardchares,divineshield"
+i	freezingwave	±ù¶³²¨	0	3	2	2	2	icebolt	"blizzardchares,gravitycaptcher"
+j	blizzardchares	±ùÑ©Óµ±§	0	3	3	2	2	"icebolt,icejavelin,freezingwave"	
+k	lightning	ÉÁÀ×	0	3	2	1	1		"lightningspear,thunderbolt,judgementray,meteorimpact,gravitycaptcher"
+l	lightningspear	ÉÁÀ×Ã¬	0	3	2	2	2	lightning	"judgementray,gravitycaptcher"
+m	thunderbolt	À×±©	0	3	2	2	2	lightning	"judgementray,meteorimpact"
+n	judgementray	ÉóÅĞÉäÏß	0	3	3	2	2	"lightning,lightningspear,thunderbolt"	
+o	meteorimpact	ÔÉÊ¯³å»÷	0	3	3	2	2	"fire,sparkflare,thunderbolt,lightning"	
+p	divineshield	Ê¥¹â¶Ü	0	3	3	2	2	"fire,firelance,icebolt,icejavelin"	
+q	gravitycaptcher	ÖØÁ¦³¡	0	3	3	2	2	"icebolt,freezingwave,lightning,lightningspear"	

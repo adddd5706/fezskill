@@ -1,16 +1,15 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
-a	normal	基本攻撃	1	1	0				
-b	dualstrike	デュアルストライク	0	3	2	1	1		flashstinger,strikedown,tempestpierce,finishthrust,shiningcross,obtainprotect,erasemagic,acceleration,vigoraid
-c	flashstinger	フラッシュスティンガー	0	3	3	2	1	dualstrike	finishthrust
-d	strikedown	ストライクダウン	0	3	2	1	1	dualstrike	finishthrust
-e	finishthrust	フィニッシュスラスト	0	3	2	1	1	dualstrike,flashstinger,strikedown	
-f	shiningcross	シャイニングクロス	0	3	2	1	1	dualstrike	obtainprotect,erasemagic,acceleration,vigoraid
-g	obtainprotect	オブテインプロテクト	0	3	1	1	2	dualstrike,shiningcross	
-h	erasemagic	イレイスマジック	0	3	1	1	2	dualstrike,shiningcross	
-i	acceleration	アクセラレーション	0	3	1	1	2	dualstrike,shiningcross	
-j	vigoraid	ヴィガーエイド	0	3	1	1	2	dualstrike,shiningcross	
-k	reversekick	リバースキック	0	3	2	1	1		penetratethrust,aerialfall,rapidfendez-vous
-l	penetratethrust	ペネトレイトスラスト	0	3	1	2	3	reversekick	aerialfall,rapidfendez-vous
-m	aerialfall	エリアルフォール	0	3	3	1	1	reversekick,penetratethrust	
-n	rapidfendez-vous	ラピッドファンデヴ	0	3	3	1	1	reversekick,penetratethrust
-o	tempestpierce	テンペストピアス	0	3	1	2	2	dualstrike	
+a	normal	��������	1	1	0				
+b	dualstrike	˫�س��	0	3	2	1	1		"flashstinger,strikedown,finishthrust,shiningcross,obtainprotect,erasemagic,acceleration,vigoraid"
+c	flashstinger	���⼱��	0	3	3	2	1	dualstrike	finishthrust
+d	strikedown	�ߵ�����	0	3	2	1	1	dualstrike	finishthrust
+e	finishthrust	�սᴩ��	0	3	2	1	1	"dualstrike,flashstinger,strikedown"	
+f	shiningcross	����ʮ��	0	3	2	1	1	dualstrike	"obtainprotect,erasemagic,acceleration,vigoraid"
+g	obtainprotect	��ñ���	0	3	1	1	2	"dualstrike,shiningcross"	
+h	erasemagic	��ħ	0	3	1	1	2	"dualstrike,shiningcross"	
+i	acceleration	����	0	3	1	1	2	"dualstrike,shiningcross"	
+j	vigoraid	���ӻ���	0	3	1	1	2	"dualstrike,shiningcross"	
+k	reversekick	������	0	3	2	1	1		"penetratethrust,aerialfall,rapidfendez-vous"
+l	penetratethrust	ն��	0	3	1	2	3	reversekick	"aerialfall,rapidfendez-vous"
+m	aerialfall	����׹��	0	3	3	1	1	"reversekick,penetratethrust"	
+n	rapidfendez-vous	���ٳ���	0	3	3	1	1	"reversekick,penetratethrust"	

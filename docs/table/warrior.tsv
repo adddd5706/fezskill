@@ -1,22 +1,22 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
-a	normal	åŸºæœ¬æ”»æ’ƒ	1	1	0				
-b	endurepain	ã‚¨ãƒ³ãƒ€ãƒ¼ãƒšã‚¤ãƒ³	1	1	0				
-c	sonicboom	ã‚½ãƒ‹ãƒƒã‚¯ãƒ–ãƒ¼ãƒ 	0	3	2	1	1		forceimpact,crumblestorm
-d	forceimpact	ãƒ•ã‚©ãƒ¼ã‚¹ã‚¤ãƒ³ãƒ‘ã‚¯ãƒˆ	0	3	3	1	1	sonicboom	crumblestorm
-e	crumblestorm	ã‚¯ãƒ©ãƒ³ãƒ–ãƒ«ã‚¹ãƒˆãƒ¼ãƒ 	0	3	3	2	2	forceimpact	
-f	blazeslash	ãƒ–ãƒ¬ã‚¤ã‚ºã‚¹ãƒ©ãƒƒã‚·ãƒ¥	0	3	2	1	1		slumattack,guardreinforce,earthstamp,shieldbash
-g	slumattack	ã‚¹ãƒ©ãƒ ã‚¢ã‚¿ãƒƒã‚¯	0	3	2	1	1	blazeslash	earthstamp
-h	earthstamp	ã‚¢ãƒ¼ã‚¹ã‚¹ã‚¿ãƒ³ãƒ—	0	3	2	2	2	slumattack,blazeslash	
-i	guardreinforce	ã‚¬ãƒ¼ãƒ‰ãƒ¬ã‚¤ãƒ³ãƒ•ã‚©ãƒ¼ã‚¹	0	3	2	1	1	blazeslash	shieldbash,solidwall
-j	shieldbash	ã‚·ãƒ¼ãƒ«ãƒ‰ãƒãƒƒã‚·ãƒ¥	0	3	2	2	2	guardreinforce,blazeslash	
-k	smash	ã‚¹ãƒãƒƒã‚·ãƒ¥	0	3	2	1	1		strikesmash,behemostail,extendblade,attackreinforce,heavysmash,dragontail,swordrampage,crackbung,assaultedge
-l	strikesmash	ã‚¹ãƒˆãƒ©ã‚¤ã‚¯ã‚¹ãƒãƒƒã‚·ãƒ¥	0	3	2	1	1	smash	heavysmash
-m	heavysmash	ãƒ˜ãƒ“ãƒ¼ã‚¹ãƒãƒƒã‚·ãƒ¥	0	3	2	2	2	strikesmash,smash	
-n	behemostail	ãƒ™ãƒ’ãƒ¢ã‚¹ãƒ†ã‚¤ãƒ«	0	3	2	1	1	smash	dragontail,crackbung
-o	dragontail	ãƒ‰ãƒ©ã‚´ãƒ³ãƒ†ã‚¤ãƒ«	0	3	2	2	2	behemostail,smash	
-p	crackbung	ã‚¯ãƒ©ãƒƒã‚¯ãƒãƒ³ã‚°	0	3	1	2	2	behemostail,smash	
-q	extendblade	ã‚¨ã‚¯ã‚¹ãƒ†ãƒ³ãƒ–ãƒ¬ã‚¤ãƒ‰	0	3	2	1	1	smash	swordrampage,assaultedge
-r	swordrampage	ã‚½ãƒ¼ãƒ‰ãƒ©ãƒ³ãƒšãƒ¼ã‚¸	0	3	2	2	2	extendblade,smash	
-s	assaultedge	ã‚¢ã‚µãƒ«ãƒˆã‚¨ãƒƒã‚¸	0	3	1	2	2	extendblade,smash	
-t	attackreinforce	ã‚¢ã‚¿ãƒƒã‚¯ãƒ¬ã‚¤ãƒ³ãƒ•ã‚©ãƒ¼ã‚¹	0	3	2	1	1	smash	
-u	solidwall	ã‚½ãƒªãƒƒãƒ‰ã‚¦ã‚©ãƒ¼ãƒ«	0	3	1	2	2	guardreinforce,blazeslash	
+a	normal	»ù±¾¹¥»÷	1	1	0				
+b	endurepain	Í´³ş¿ËĞÇ	1	1	0				
+c	sonicboom	Òô±¬¹¥»÷	0	3	2	1	1		"forceimpact,crumblestorm"
+d	forceimpact	Á¦Á¿³å»÷	0	3	3	1	1	sonicboom	crumblestorm
+e	crumblestorm	·ÛËé±©·ç	0	3	3	2	2	forceimpact	
+f	blazeslash	³ãÁÒÕ¶	0	3	2	1	1		"slumattack,guardreinforce,earthstamp,shieldbash"
+g	slumattack	ÃÍ»÷	0	3	2	1	1	blazeslash	earthstamp
+h	earthstamp	´óµØÖ®¶Ù	0	3	2	2	2	"slumattack,blazeslash"	
+i	guardreinforce	¼ÓÇ¿±£»¤	0	3	2	1	1	blazeslash	shieldbash
+j	shieldbash	¶ÜÅÆÅ­»÷	0	3	2	2	2	"guardreinforce,blazeslash"	
+k	smash	Ëé»÷	0	3	2	1	1		"strikesmash,behemostail,extendblade,attackreinforce,heavysmash,dragontail,swordrampage"
+l	strikesmash	³å»÷Õ¶	0	3	2	1	1	smash	heavysmash
+m	heavysmash	ÖØÑ¹Õ¶	0	3	2	2	2	"strikesmash,smash"	
+n	behemostail	¾ŞÊŞ´«³Ğ	0	3	2	1	1	smash	dragontail
+o	dragontail	¾ŞÁú´«³Ğ	0	3	2	2	2	"behemostail,smash"	
+p									
+q	extendblade	ÉìÕÅ½£ÈĞ	0	3	2	1	1	smash	swordrampage
+r	swordrampage	±©Ìø½£	0	3	2	2	2	"extendblade,smash"	
+s									
+t	attackreinforce	¼ÓÇ¿¹¥»÷	0	3	2	1	1	smash	
+u									

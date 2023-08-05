@@ -1,33 +1,29 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
-a	bow	åŸºæœ¬å¼“æ”»æ’ƒ	1	1	0				
-b	gun	åŸºæœ¬éŠƒæ”»æ’ƒ	1	1	0				
-c	dagger	åŸºæœ¬çŸ­å‰£æ”»æ’ƒ	1	1	0				
-d	airraid	ã‚¨ã‚¢ãƒ¬ã‚¤ãƒ‰	0	3	2	1	1		blazeshot,arrowrain
-e	blazeshot	ãƒ–ãƒ¬ã‚¤ã‚ºã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1	airraid	arrowrain
-f	arrowrain	ã‚¢ãƒ­ãƒ¼ãƒ¬ã‚¤ãƒ³	0	3	3	1	1	blazeshot,airraid	
-g	poisonshot	ãƒã‚¤ã‚ºãƒ³ã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1		spiderweb,trueshot
-h	spiderweb	ã‚¹ãƒ‘ã‚¤ãƒ€ãƒ¼ã‚¦ã‚§ãƒ–	0	3	2	1	1	poisonshot	trueshot
-i	trueshot	ãƒˆã‚¥ãƒ«ãƒ¼ã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1	spiderweb,poisonshot	
-j	eagleshot	ã‚¤ãƒ¼ã‚°ãƒ«ã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1		powershoot,piercingshoot,dodgeshoot
-k	dodgeshoot	ãƒ‰ãƒƒã‚¸ã‚·ãƒ¥ãƒ¼ãƒˆ	0	3	1	2	2	eagleshot	
-l	powershoot	ãƒ‘ãƒ¯ãƒ¼ã‚·ãƒ¥ãƒ¼ãƒˆ	0	3	2	1	1	eagleshot	piercingshoot
-m	piercingshoot	ãƒ”ã‚¢ãƒƒã‚·ãƒ³ã‚°ã‚·ãƒ¥ãƒ¼ãƒˆ	0	3	3	1	1	powershoot,eagleshot	
-n	hide	ãƒã‚¤ãƒ‰	1	3	0	1	1		viperbite,punishingstrike
-o	viperbite	ãƒ´ã‚¡ã‚¤ãƒ‘ãƒ¼ãƒã‚¤ãƒˆ	0	3	2	1	1	hide	punishingstrike
-p	punishingstrike	ãƒ‘ãƒ‹ãƒƒã‚·ãƒ³ã‚°ã‚¹ãƒˆãƒ©ã‚¤ã‚¯	0	3	2	2	2	viperbite,hide	
-q	poisonblow	ãƒã‚¤ã‚ºãƒ³ãƒ–ãƒ­ã‚¦	0	3	2	1	1		powerbreak,voiddarkness,dagerstrike
-r	powerbreak	ãƒ‘ãƒ¯ãƒ¼ãƒ–ãƒ¬ã‚¤ã‚¯	0	3	2	1	1	poisonblow	voiddarkness
-s	voiddarkness	ãƒ´ã‚©ã‚¤ãƒ‰ãƒ€ãƒ¼ã‚¯ãƒã‚¹	0	3	2	2	2	poisonblow,powerbreak	
-t	legbreak	ãƒ¬ãƒƒã‚°ãƒ–ãƒ¬ã‚¤ã‚¯	0	3	2	1	1		guardbreak,armbreak
-u	guardbreak	ã‚¬ãƒ¼ãƒ‰ãƒ–ãƒ¬ã‚¤ã‚¯	0	3	2	1	1	legbreak	armbreak
-v	armbreak	ã‚¢ãƒ¼ãƒ ãƒ–ãƒ¬ã‚¤ã‚¯	0	3	2	2	2	guardbreak,legbreak	
-w	dagerstrike	ãƒ€ã‚¬ãƒ¼ã‚¹ãƒˆãƒ©ã‚¤ã‚¯	0	3	1	2	2	poisonblow	
-x	frickshot	ãƒ•ãƒªãƒƒã‚¯ã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1		rushbullet,burstcannon
-y	rushbullet	ãƒ©ãƒƒã‚·ãƒ¥ãƒãƒ¬ãƒƒãƒˆ	0	3	2	1	1	frickshot	burstcannon
-z	commetcannon	ã‚³ãƒ¡ãƒƒãƒˆã‚­ãƒ£ãƒãƒ³	0	3	2	1	1		clushshot,oilshot,burstcannon
-A	clushshot	ã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã‚·ãƒ§ãƒƒãƒˆ	0	3	2	1	1	commetcannon	burstcannon
-B	burstcannon	ãƒãƒ¼ã‚¹ãƒˆã‚­ãƒ£ãƒãƒ³	0	3	2	2	2	rushbullet,clushshot	
-C	oilshot	ã‚ªã‚¤ãƒ«ã‚·ãƒ§ãƒƒãƒˆ	0	3	1	2	2	commetcannon	
-D	flushbullet	ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒãƒ¬ãƒƒãƒˆ	0	3	2	1	1		whitebullet,scratchtrap
-E	whitebullet	ãƒ›ãƒ¯ã‚¤ãƒˆãƒãƒ¬ãƒƒãƒˆ	0	3	2	1	1	flushbullet	scratchtrap
-F	scratchtrap	ã‚¹ã‚¯ãƒ©ãƒƒãƒãƒˆãƒ©ãƒƒãƒ—	0	3	3	1	1	whitebullet	
+a	bow	»ù±¾¹­¹¥»÷	1	1	0				
+b	gun	»ù±¾ï¥¹¥»÷	1	1	0				
+c	dagger	»ù±¾¶Ì½£¹¥»÷	1	1	0				
+d	airraid	¿ÕÏ®	0	3	2	1	1		"blazeshot,arrowrain"
+e	blazeshot	³ãÈÈÉä»÷	0	3	2	1	1	airraid	arrowrain
+f	arrowrain	¼ıÓê	0	3	3	1	1	"blazeshot,airraid"	
+g	poisonshot	¶¾ĞÔÉä»÷	0	3	2	1	1		"spiderweb,trueshot"
+h	spiderweb	ÖëË¿Éä»÷	0	3	2	1	1	poisonshot	trueshot
+i	trueshot	¾«×¼Éä»÷	0	3	2	1	1	"spiderweb,poisonshot"	
+j	eagleshot	ĞÛÓ¥Éä»÷	0	3	2	1	1		"powershoot,piercingshoot"
+k									
+l	powershoot	Ç¿Á¦Éä»÷	0	3	2	1	1	eagleshot	piercingshoot
+m	piercingshoot	¹á¹ÇÉä»÷	0	3	3	1	1	"powershoot,eagleshot"	
+n	hide	ÒşÉí	1	3	0	1	1		"viperbite,punishingstrike"
+o	viperbite	¶¾ÉßËºÒ§	0	3	2	1	1	hide	punishingstrike
+p	punishingstrike	³Í½äÖØ»÷	0	3	2	2	2	"viperbite,hide"	
+q	poisonblow	¶¾Îí	0	3	2	1	1		"powerbreak,voiddarkness"
+r	powerbreak	Á¦Á¿ÆÆ»µ	0	3	2	1	1	poisonblow	voiddarkness
+s	voiddarkness	ÆáºÚ¿Õ¼ä	0	3	2	2	2	"poisonblow,powerbreak"	
+t	legbreak	×ã²¿ÆÆ»µ	0	3	2	1	1		"guardbreak,armbreak"
+u	guardbreak	·ÀÓùÆÆ»µ	0	3	2	1	1	legbreak	armbreak
+v	armbreak	Íó²¿ÆÆ»µ	0	3	2	2	2	"guardbreak,legbreak"	
+w									
+x 	oilshot	ÓÍµ¯Éä»÷	0	3	2	1	1		"acidshot,poisonejection"
+y	acidshot	Ç¿ËáÉä»÷	0	3	2	1	1	oilshot	poisonejection
+z	whitebullet	°×Îí	0	3	2	1	1		"flushbullet,poisonejection"
+A	flushbullet	Ñ£Ä¿ÉÁ¹â	0	3	2	1	1	whitebullet	poisonejection
+B	poisonejection	ÃÍ¶¾ÅçÉä	0	3	2	1	1	"oilshot,acidshot,whitebullet,flushbullet"	

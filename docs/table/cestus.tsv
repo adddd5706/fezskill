@@ -1,18 +1,18 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
-a	normal	åŸºæœ¬æ”»æ’ƒ	1	1	0				
-b	endureraid	ã‚¨ãƒ³ãƒ€ãƒ¼ãƒ¬ã‚¤ãƒ‰	1	1	0				
-c	shutout	ã‚·ãƒ£ãƒƒãƒˆã‚¢ã‚¦ãƒˆ	0	2	2	2			hardreinforce,harmactivate,towerdomination,geysersmash
-d	hardreinforce	ãƒãƒ¼ãƒ‰ãƒ¬ã‚¤ãƒ³ãƒ•ã‚©ãƒ¼ã‚¹	0	1	2			shutout	geysersmash
-e	harmactivate	ãƒãƒ¼ãƒ ã‚¢ã‚¯ãƒ†ã‚£ãƒ™ã‚¤ãƒˆ	0	3	2	1	1	shutout	geysersmash
-f	towerdomination	ã‚¿ãƒ¯ãƒ¼ãƒ‰ãƒŸãƒãƒ¼ã‚·ãƒ§ãƒ³	0	1	2			shutout	geysersmash
-g	geysersmash	ã‚²ã‚¤ã‚¶ãƒ¼ã‚¹ãƒãƒƒã‚·ãƒ¥	0	3	2	2	2	hardreinforce,towerdomination,harmactivate	
-h	intensify	ã‚¤ãƒ³ãƒ†ãƒ³ã‚¹ãƒ•ã‚¡ã‚¤	0	3	2	2	2		knockimpact,earthbind,solidstrike,shockwave
-i	knockimpact	ãƒãƒƒã‚¯ã‚¤ãƒ³ãƒ‘ã‚¯ãƒˆ	0	3	2	1	1	intensify	earthbind
-j	earthbind	ã‚¢ãƒ¼ã‚¹ãƒã‚¤ãƒ³ãƒ‰	0	3	3	2	1	intensify,knockimpact	
-k	solidstrike	ã‚½ãƒªãƒƒãƒ‰ã‚¹ãƒˆãƒ©ã‚¤ã‚¯	0	3	2	1	1	intensify	shockwave
-l	shockwave	ã‚·ãƒ§ãƒƒã‚¯ã‚¦ã‚§ã‚¤ãƒ–	0	3	2	2	2	intensify,solidstrike	
-m	drainclaw	ãƒ‰ãƒ¬ã‚¤ãƒ³ã‚¯ãƒ­ãƒ¼	0	3	2	1	1		hornetsting,energysphire,backhandblow,cyclonedisaster
-n	hornetsting	ãƒ›ãƒ¼ãƒãƒƒãƒˆã‚¹ãƒ†ã‚£ãƒ³ã‚°	0	3	2	2	2	drainclaw	cyclonedisaster
-o	backhandblow	ãƒãƒƒã‚¯ãƒãƒ³ãƒ‰ãƒ–ãƒ­ãƒ¼	0	3	2	1	1	drainclaw	cyclonedisaster
-p	cyclonedisaster	ã‚µã‚¤ã‚¯ãƒ­ãƒ³ãƒ‡ã‚£ã‚¶ã‚¹ã‚¿ãƒ¼	0	3	1	2	3	drainclaw,backhandblow,hornetsting	
-q	energysphire	ã‚¨ãƒŠã‚¸ãƒ¼ã‚¹ãƒ•ã‚£ã‚¢	0	3	1	2	2	drainclaw	
+a	normal	»ù±¾¹¥»÷	1	1	0				
+b	endureraid	Í»»÷¿ËĞÇ	1	1	0				
+c	shutout	ÕÚ¶Ï	0	1	2				"hardreinforce,harmactivate,towerdomination"
+d	hardreinforce	¼Ó¹Ì±£»¤	0	1	2			shutout	
+e	harmactivate	Î£ÏÕ¼¤»î	0	3	2	1	1	drainclaw	geysersmash
+f	towerdomination	¼ıËş¿ØÖÆ	0	1	2			shutout	
+g	geysersmash	¼¤Åç·ÛËé	0	3	2	2	2	"drainclaw,hornetsting,harmactivate"	
+h	intensify	¼¤»¯	0	3	2	1	1		"knockimpact,earthbind,solidstrike,shockwave"
+i	knockimpact	´ò»÷Õğº³	0	3	2	1	1	intensify	earthbind
+j	earthbind	´óµØ²øÈÆ	0	3	3	2	1	"intensify,knockimpact"	
+k	solidstrike	Äı¼¯Õ¶	0	3	2	1	1	intensify	shockwave
+l	shockwave	³å»÷²¨	0	3	2	2	2	"intensify,solidstrike"	
+m	drainclaw	ÎüÑª×¦	0	3	2	1	1		"hornetsting,harmactivate,geysersmash,backhandblow,cyclonedisaster"
+n	hornetsting	·ä´Ì	0	3	2	2	2	drainclaw	geysersmash
+o	backhandblow	·´ÊÖ¹¥»÷	0	3	2	1	1	drainclaw	cyclonedisaster
+p	cyclonedisaster	Ğı·çÔÖÄÑ	0	3	1	2	3	"drainclaw,backhandblow"	
+q	sacrifice	ÎşÉü	0	1	2			shutout	
