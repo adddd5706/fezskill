@@ -14,9 +14,6 @@ l	strikesmash	³å»÷Õ¶	0	3	2	1	1	smash	heavysmash
 m	heavysmash	ÖØÑ¹Õ¶	0	3	2	2	2	"strikesmash,smash"	
 n	behemostail	¾ŞÊŞ´«³Ğ	0	3	2	1	1	smash	dragontail
 o	dragontail	¾ŞÁú´«³Ğ	0	3	2	2	2	"behemostail,smash"	
-p									
-q	extendblade	ÉìÕÅ½£ÈĞ	0	3	2	1	1	smash	swordrampage
-r	swordrampage	±©Ìø½£	0	3	2	2	2	"extendblade,smash"	
-s									
-t	attackreinforce	¼ÓÇ¿¹¥»÷	0	3	2	1	1	smash	
-u									
+p	extendblade	ÉìÕÅ½£ÈĞ	0	3	2	1	1	smash	swordrampage
+q	swordrampage	±©Ìø½£	0	3	2	2	2	"extendblade,smash"	
+r	attackreinforce	¼ÓÇ¿¹¥»÷	0	3	2	1	1	smash	

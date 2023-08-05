@@ -9,21 +9,19 @@ g	poisonshot	¶¾ĞÔÉä»÷	0	3	2	1	1		"spiderweb,trueshot"
 h	spiderweb	ÖëË¿Éä»÷	0	3	2	1	1	poisonshot	trueshot
 i	trueshot	¾«×¼Éä»÷	0	3	2	1	1	"spiderweb,poisonshot"	
 j	eagleshot	ĞÛÓ¥Éä»÷	0	3	2	1	1		"powershoot,piercingshoot"
-k									
-l	powershoot	Ç¿Á¦Éä»÷	0	3	2	1	1	eagleshot	piercingshoot
-m	piercingshoot	¹á¹ÇÉä»÷	0	3	3	1	1	"powershoot,eagleshot"	
-n	hide	ÒşÉí	1	3	0	1	1		"viperbite,punishingstrike"
-o	viperbite	¶¾ÉßËºÒ§	0	3	2	1	1	hide	punishingstrike
-p	punishingstrike	³Í½äÖØ»÷	0	3	2	2	2	"viperbite,hide"	
-q	poisonblow	¶¾Îí	0	3	2	1	1		"powerbreak,voiddarkness"
-r	powerbreak	Á¦Á¿ÆÆ»µ	0	3	2	1	1	poisonblow	voiddarkness
-s	voiddarkness	ÆáºÚ¿Õ¼ä	0	3	2	2	2	"poisonblow,powerbreak"	
-t	legbreak	×ã²¿ÆÆ»µ	0	3	2	1	1		"guardbreak,armbreak"
-u	guardbreak	·ÀÓùÆÆ»µ	0	3	2	1	1	legbreak	armbreak
-v	armbreak	Íó²¿ÆÆ»µ	0	3	2	2	2	"guardbreak,legbreak"	
-w									
-x 	oilshot	ÓÍµ¯Éä»÷	0	3	2	1	1		"acidshot,poisonejection"
-y	acidshot	Ç¿ËáÉä»÷	0	3	2	1	1	oilshot	poisonejection
-z	whitebullet	°×Îí	0	3	2	1	1		"flushbullet,poisonejection"
-A	flushbullet	Ñ£Ä¿ÉÁ¹â	0	3	2	1	1	whitebullet	poisonejection
-B	poisonejection	ÃÍ¶¾ÅçÉä	0	3	2	1	1	"oilshot,acidshot,whitebullet,flushbullet"	
+k	powershoot	Ç¿Á¦Éä»÷	0	3	2	1	1	eagleshot	piercingshoot
+l	piercingshoot	¹á¹ÇÉä»÷	0	3	3	1	1	"powershoot,eagleshot"	
+m	hide	ÒşÉí	1	3	0	1	1		"viperbite,punishingstrike"
+n	viperbite	¶¾ÉßËºÒ§	0	3	2	1	1	hide	punishingstrike
+o	punishingstrike	³Í½äÖØ»÷	0	3	2	2	2	"viperbite,hide"	
+p	poisonblow	¶¾Îí	0	3	2	1	1		"powerbreak,voiddarkness"
+q	powerbreak	Á¦Á¿ÆÆ»µ	0	3	2	1	1	poisonblow	voiddarkness
+r	voiddarkness	ÆáºÚ¿Õ¼ä	0	3	2	2	2	"poisonblow,powerbreak"	
+s	legbreak	×ã²¿ÆÆ»µ	0	3	2	1	1		"guardbreak,armbreak"
+t	guardbreak	·ÀÓùÆÆ»µ	0	3	2	1	1	legbreak	armbreak
+u	armbreak	Íó²¿ÆÆ»µ	0	3	2	2	2	"guardbreak,legbreak"	
+v	oilshot	ÓÍµ¯Éä»÷	0	3	2	1	1		"acidshot,poisonejection"
+w	acidshot	Ç¿ËáÉä»÷	0	3	2	1	1	oilshot	poisonejection
+x 	whitebullet	°×Îí	0	3	2	1	1		"flushbullet,poisonejection"
+y	flushbullet	Ñ£Ä¿ÉÁ¹â	0	3	2	1	1	whitebullet	poisonejection
+z	poisonejection	ÃÍ¶¾ÅçÉä	0	3	2	1	1	"oilshot,acidshot,whitebullet,flushbullet"	

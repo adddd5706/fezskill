@@ -1,7 +1,7 @@
 idc	id	name	initialLevel	maxLevel	level1	level2	level3	lower	upper
 a	normal	基本攻击	1	1	0				
 b	endureraid	突击克星	1	1	0				
-c	shutout	遮断	0	1	2				"hardreinforce,harmactivate,towerdomination"
+c	shutout	遮断	0	1	2				"hardreinforce,sacrifice,towerdomination"
 d	hardreinforce	加固保护	0	1	2			shutout	
 e	harmactivate	危险激活	0	3	2	1	1	drainclaw	geysersmash
 f	towerdomination	箭塔控制	0	1	2			shutout	
